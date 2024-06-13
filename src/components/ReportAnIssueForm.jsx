@@ -30,7 +30,7 @@ function ReportAnIssueForm() {
    if (isFormSubmited) {
     return (
         <p className="ReportAnIssue-form thanksmsg">
-          Thanks for bringing the issue to our attention. We'll review it
+          Thanks for bringing the issue to our attention. We'll review it
           shortly and provide an update soon!
         </p>
     );
@@ -38,7 +38,7 @@ function ReportAnIssueForm() {
 
 
      return (
-       <div className="ReportAnIssue-form">
+       <div className="feedbackForm">
          <p className="formTitle">
            Let us know about the <span>Issue</span> you are facing right now!
          </p>
@@ -49,15 +49,15 @@ function ReportAnIssueForm() {
              <option value="option 2">Intervew Questions</option>
            </select>
          </div>
-         <div className="issueDescription">
-           <label htmlFor="describe-issue">Describe the issue in detail</label>
+         <div className="Description">
+           <label htmlFor="describe-input">Describe the issue in detail</label>
            <div className="textareacontainer">
              <textarea
                rows="4"
                cols="50"
                placeholder="Write here..."
                name="describe-issue"
-               id="describe-issue"
+               id="describe-input"
                maxLength={500}
                value={inputs.issueDescription}
                onChange={handleInputChange}
