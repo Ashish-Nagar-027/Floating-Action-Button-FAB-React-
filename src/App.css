@@ -461,6 +461,16 @@ button.attach-button {
 }
 
 
+.fab-menu-top {
+  flex-direction: row-reverse;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  display: none
+}
+
+
 
 
 @media only screen and (max-width: 650px) {
@@ -478,8 +488,40 @@ button.attach-button {
     font-size: 15px
   }
 
+  .hidden-menu {
+    display: none
+  }
+
+  .fab-menu-top{
+    display: flex
+  }
+
+ 
+
   .profile img {
     height: 40px;
-   
-} 
+  } 
+
+  .Feedback{
+    display : flex;
+    bottom: -1rem;
+    width: 100%;
+    right: 0;
+    transform: translateY(0%);
+    transition: transform 1s ease-in-out
+  }
+
+  .model-wrapper {
+    width:100%
+  }
+
+  .mainContainer {
+    max-width:100%
+  }
+
+  .formModal {
+    min-width: 100%
+  }
+
+
 }
